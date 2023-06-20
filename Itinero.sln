@@ -1,46 +1,48 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33808.371
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0DE9CEF4-2FE8-4C59-B86E-91B00C67F772}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero", "src\Itinero\Itinero.csproj", "{1ACD2D53-1CDC-4F32-84C7-721457181EC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero", "src\Itinero\Itinero.csproj", "{1ACD2D53-1CDC-4F32-84C7-721457181EC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{A3A9D1F8-AB2B-4316-B64E-E67AEE768E10}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-		.gitignore = .gitignore
-		NOTICE.md = NOTICE.md
-		LICENSE.md = LICENSE.md
-		Itinero.Common.props = Itinero.Common.props
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Itinero.Common.props = Itinero.Common.props
 		Itinero.sln.DotSettings = Itinero.sln.DotSettings
 		Itinero.sln.DotSettings.user = Itinero.sln.DotSettings.user
+		LICENSE.md = LICENSE.md
+		NOTICE.md = NOTICE.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0EFCE06D-E8CE-461C-A1E1-0AECC1BE06E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.Tests", "test\Itinero.Tests\Itinero.Tests.csproj", "{5240E6EE-CC00-48BC-AE4A-B4AFDABC446D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.Tests", "test\Itinero.Tests\Itinero.Tests.csproj", "{5240E6EE-CC00-48BC-AE4A-B4AFDABC446D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.Tests.Functional", "test\Itinero.Tests.Functional\Itinero.Tests.Functional.csproj", "{A57C1E7A-54AD-435B-A2FC-25BCCF6D4AB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.Tests.Functional", "test\Itinero.Tests.Functional\Itinero.Tests.Functional.csproj", "{A57C1E7A-54AD-435B-A2FC-25BCCF6D4AB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.IO.Osm", "src\Itinero.IO.Osm\Itinero.IO.Osm.csproj", "{FA495F36-10D1-49C5-BBBF-55D9DFE02679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.IO.Osm", "src\Itinero.IO.Osm\Itinero.IO.Osm.csproj", "{FA495F36-10D1-49C5-BBBF-55D9DFE02679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.IO.Osm.Tiles", "src\Itinero.IO.Osm.Tiles\Itinero.IO.Osm.Tiles.csproj", "{EBB62F91-B255-4E48-A933-BDA3A5ECAA84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.IO.Osm.Tiles", "src\Itinero.IO.Osm.Tiles\Itinero.IO.Osm.Tiles.csproj", "{EBB62F91-B255-4E48-A933-BDA3A5ECAA84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{06B47317-FE05-4B5E-BC50-47DA1DC8B151}"
 	ProjectSection(SolutionItems) = preProject
-		docs\routable-tiles-ghent.png = docs\routable-tiles-ghent.png
-		docs\ROADMAP.md = docs\ROADMAP.md
 		docs\NOTES.md = docs\NOTES.md
+		docs\ROADMAP.md = docs\ROADMAP.md
+		docs\routable-tiles-ghent.png = docs\routable-tiles-ghent.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.Geo", "src\Itinero.Geo\Itinero.Geo.csproj", "{71EA15B8-8FE1-47DE-8694-FBC964A346B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.Geo", "src\Itinero.Geo\Itinero.Geo.csproj", "{71EA15B8-8FE1-47DE-8694-FBC964A346B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.Profiles.Lua", "src\Itinero.Profiles.Lua\Itinero.Profiles.Lua.csproj", "{2F07A2DD-C804-452E-BAD3-BBF8D0A5ECD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.Profiles.Lua", "src\Itinero.Profiles.Lua\Itinero.Profiles.Lua.csproj", "{2F07A2DD-C804-452E-BAD3-BBF8D0A5ECD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itinero.Instructions", "src\Itinero.Instructions\Itinero.Instructions.csproj", "{ECF968B9-3710-4A06-A1EC-D056A9520922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itinero.Instructions", "src\Itinero.Instructions\Itinero.Instructions.csproj", "{ECF968B9-3710-4A06-A1EC-D056A9520922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "src\Itinero.Samples\SampleApp\SampleApp.csproj", "{7FE2E753-7F27-4DEB-9194-0DFB64890A87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,9 +52,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1ACD2D53-1CDC-4F32-84C7-721457181EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -151,6 +150,21 @@ Global
 		{ECF968B9-3710-4A06-A1EC-D056A9520922}.Release|x64.Build.0 = Release|Any CPU
 		{ECF968B9-3710-4A06-A1EC-D056A9520922}.Release|x86.ActiveCfg = Release|Any CPU
 		{ECF968B9-3710-4A06-A1EC-D056A9520922}.Release|x86.Build.0 = Release|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Debug|x64.Build.0 = Debug|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Debug|x86.Build.0 = Debug|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Release|x64.ActiveCfg = Release|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Release|x64.Build.0 = Release|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Release|x86.ActiveCfg = Release|Any CPU
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1ACD2D53-1CDC-4F32-84C7-721457181EC7} = {0DE9CEF4-2FE8-4C59-B86E-91B00C67F772}
@@ -161,5 +175,6 @@ Global
 		{71EA15B8-8FE1-47DE-8694-FBC964A346B3} = {0DE9CEF4-2FE8-4C59-B86E-91B00C67F772}
 		{2F07A2DD-C804-452E-BAD3-BBF8D0A5ECD7} = {0DE9CEF4-2FE8-4C59-B86E-91B00C67F772}
 		{ECF968B9-3710-4A06-A1EC-D056A9520922} = {0DE9CEF4-2FE8-4C59-B86E-91B00C67F772}
+		{7FE2E753-7F27-4DEB-9194-0DFB64890A87} = {0DE9CEF4-2FE8-4C59-B86E-91B00C67F772}
 	EndGlobalSection
 EndGlobal
