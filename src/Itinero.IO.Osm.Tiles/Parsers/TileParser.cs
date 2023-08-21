@@ -11,7 +11,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Itinero.IO.Osm.Tiles.Parsers;
 
-internal static class TileParser
+public static class TileParser
 {
     /// <summary>
     /// The base url to fetch the tiles from.

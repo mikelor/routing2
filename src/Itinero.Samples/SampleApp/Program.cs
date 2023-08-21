@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Itinero.IO.Json.GeoJson;
+using Itinero.Routes;
+using Itinero.Routing;
 using Itinero.IO.Osm;
 using Itinero.IO.Osm.Tiles.Parsers;
 using Itinero.Profiles;
@@ -104,17 +106,20 @@ internal static class Program
         var car = Profiles.Lua.Osm.OsmProfiles.Car;
 
         // setup a router db with a local osm file.
-        var routerDb = await FromUrl(car, LuxembourgUrl, "luxembourg-latest.osm.pbf");
+        var routerDb = await FromUrl(car, LuxembourgUrl, "nevada-latest.osm.pbf");
 
-        var lux1 = (6.119298934936523, 49.60962540702068, (float?)0f);
-        var lux2 = (6.124148368835449, 49.588792167215345, (float?)0f);
+        //var lux1 = (6.119298934936523, 49.60962540702068, (float?)0f);
+        //var lux2 = (6.124148368835449, 49.588792167215345, (float?)0f);
+        var lux1 = (-115.29468954997404, 36.141656539732494, (float?)0f);
+        var lux2 = (-115.28426112136832, 36.139230528291534, (float?)0f);   
 
         var latest = routerDb.Latest;
         var lux1sp = await latest.Snap().ToAsync(lux1);
         var lux2sp = await latest.Snap().ToAsync(lux2);
 
-        // var oneToOne = await RouterOneToOneTest.Default.RunAsync((latest, lux1sp, lux2sp, car));
-        // var oneToOneGeoJson = oneToOne.ToGeoJson();
+        var oneToOne = await RouterOneToOneTest.Default.RunAsync((latest, lux1sp, lux2sp, car));
+        var oneToOneGeoJson = oneToOne.ToGeoJson();
+        Console.WriteLine(oneToOneGeoJson.ToString());
         // var routes = await RouterOneToOneWithAlternativeTest.Default.RunAsync((latest, lux1sp, lux2sp, car));
         // varr geoJson = routes.Select(r => r.ToGeoJson()).ToList();
         // Console.WriteLine(geoJson);
